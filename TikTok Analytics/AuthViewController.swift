@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AuthViewController.swift
 //  TikTok Analytics
 //
 //  Created by Aleksander Logozinsky on 05.08.2020.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AuthorizationScreen: UIViewController {
+class AuthViewController: UIViewController {
     
     override func loadView() {
         super.loadView()
@@ -20,7 +20,6 @@ class AuthorizationScreen: UIViewController {
         
         
     }
-
 
     private func setupLayout() {
         view.backgroundColor = .white

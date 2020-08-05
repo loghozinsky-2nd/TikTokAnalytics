@@ -3,27 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D18F46C824DA8D3100252F0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18F46C724DA8D3100252F0A /* AppDelegate.swift */; };
 		D18F46CA24DA8D3100252F0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18F46C924DA8D3100252F0A /* SceneDelegate.swift */; };
-		D18F46CC24DA8D3100252F0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18F46CB24DA8D3100252F0A /* ViewController.swift */; };
-		D18F46CF24DA8D3100252F0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18F46CD24DA8D3100252F0A /* Main.storyboard */; };
+		D18F46CC24DA8D3100252F0A /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18F46CB24DA8D3100252F0A /* AuthViewController.swift */; };
 		D18F46D124DA8D3100252F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D18F46D024DA8D3100252F0A /* Assets.xcassets */; };
 		D18F46D424DA8D3100252F0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18F46D224DA8D3100252F0A /* LaunchScreen.storyboard */; };
+		D18F46DD24DA903400252F0A /* SwiftyStoreKit in Frameworks */ = {isa = PBXBuildFile; productRef = D18F46DC24DA903400252F0A /* SwiftyStoreKit */; };
+		D18F46E024DA905E00252F0A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D18F46DF24DA905E00252F0A /* Alamofire */; };
+		D18F46E324DA90C100252F0A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D18F46E224DA90C100252F0A /* RxCocoa */; };
+		D18F46E524DA90C100252F0A /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D18F46E424DA90C100252F0A /* RxSwift */; };
+		D18F46E724DA957E00252F0A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18F46E624DA957E00252F0A /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D18F46C424DA8D3100252F0A /* TikTok Analytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TikTok Analytics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D18F46C724DA8D3100252F0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D18F46C924DA8D3100252F0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D18F46CB24DA8D3100252F0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D18F46CE24DA8D3100252F0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D18F46CB24DA8D3100252F0A /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		D18F46D024DA8D3100252F0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D18F46D324DA8D3100252F0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D18F46D524DA8D3100252F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D18F46E624DA957E00252F0A /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D18F46E324DA90C100252F0A /* RxCocoa in Frameworks */,
+				D18F46DD24DA903400252F0A /* SwiftyStoreKit in Frameworks */,
+				D18F46E524DA90C100252F0A /* RxSwift in Frameworks */,
+				D18F46E024DA905E00252F0A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +64,23 @@
 		D18F46C624DA8D3100252F0A /* TikTok Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				D18F46C724DA8D3100252F0A /* AppDelegate.swift */,
-				D18F46C924DA8D3100252F0A /* SceneDelegate.swift */,
-				D18F46CB24DA8D3100252F0A /* ViewController.swift */,
-				D18F46CD24DA8D3100252F0A /* Main.storyboard */,
-				D18F46D024DA8D3100252F0A /* Assets.xcassets */,
-				D18F46D224DA8D3100252F0A /* LaunchScreen.storyboard */,
-				D18F46D524DA8D3100252F0A /* Info.plist */,
+				D18F46E824DA976B00252F0A /* Resource */,
+				D18F46E624DA957E00252F0A /* NavigationController.swift */,
+				D18F46CB24DA8D3100252F0A /* AuthViewController.swift */,
 			);
 			path = "TikTok Analytics";
+			sourceTree = "<group>";
+		};
+		D18F46E824DA976B00252F0A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D18F46D524DA8D3100252F0A /* Info.plist */,
+				D18F46C724DA8D3100252F0A /* AppDelegate.swift */,
+				D18F46C924DA8D3100252F0A /* SceneDelegate.swift */,
+				D18F46D024DA8D3100252F0A /* Assets.xcassets */,
+				D18F46D224DA8D3100252F0A /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +99,12 @@
 			dependencies = (
 			);
 			name = "TikTok Analytics";
+			packageProductDependencies = (
+				D18F46DC24DA903400252F0A /* SwiftyStoreKit */,
+				D18F46DF24DA905E00252F0A /* Alamofire */,
+				D18F46E224DA90C100252F0A /* RxCocoa */,
+				D18F46E424DA90C100252F0A /* RxSwift */,
+			);
 			productName = "TikTok Analytics";
 			productReference = D18F46C424DA8D3100252F0A /* TikTok Analytics.app */;
 			productType = "com.apple.product-type.application";
@@ -102,7 +124,7 @@
 				};
 			};
 			buildConfigurationList = D18F46BF24DA8D3100252F0A /* Build configuration list for PBXProject "TikTok Analytics" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -110,6 +132,11 @@
 				Base,
 			);
 			mainGroup = D18F46BB24DA8D3100252F0A;
+			packageReferences = (
+				D18F46DB24DA903400252F0A /* XCRemoteSwiftPackageReference "SwiftyStoreKit" */,
+				D18F46DE24DA905E00252F0A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				D18F46E124DA90C100252F0A /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = D18F46C524DA8D3100252F0A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +153,6 @@
 			files = (
 				D18F46D424DA8D3100252F0A /* LaunchScreen.storyboard in Resources */,
 				D18F46D124DA8D3100252F0A /* Assets.xcassets in Resources */,
-				D18F46CF24DA8D3100252F0A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D18F46CC24DA8D3100252F0A /* ViewController.swift in Sources */,
+				D18F46CC24DA8D3100252F0A /* AuthViewController.swift in Sources */,
+				D18F46E724DA957E00252F0A /* NavigationController.swift in Sources */,
 				D18F46C824DA8D3100252F0A /* AppDelegate.swift in Sources */,
 				D18F46CA24DA8D3100252F0A /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +173,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D18F46CD24DA8D3100252F0A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D18F46CE24DA8D3100252F0A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D18F46D224DA8D3100252F0A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +235,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,11 +307,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73VJRTF9X7;
-				INFOPLIST_FILE = "TikTok Analytics/Info.plist";
+				INFOPLIST_FILE = "TikTok Analytics/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "loghozinsky.TikTok-Analytics";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -307,11 +327,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73VJRTF9X7;
-				INFOPLIST_FILE = "TikTok Analytics/Info.plist";
+				INFOPLIST_FILE = "TikTok Analytics/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "loghozinsky.TikTok-Analytics";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -341,6 +362,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D18F46DB24DA903400252F0A /* XCRemoteSwiftPackageReference "SwiftyStoreKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bizz84/SwiftyStoreKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.16.1;
+			};
+		};
+		D18F46DE24DA905E00252F0A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.2;
+			};
+		};
+		D18F46E124DA90C100252F0A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D18F46DC24DA903400252F0A /* SwiftyStoreKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D18F46DB24DA903400252F0A /* XCRemoteSwiftPackageReference "SwiftyStoreKit" */;
+			productName = SwiftyStoreKit;
+		};
+		D18F46DF24DA905E00252F0A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D18F46DE24DA905E00252F0A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		D18F46E224DA90C100252F0A /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D18F46E124DA90C100252F0A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		D18F46E424DA90C100252F0A /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D18F46E124DA90C100252F0A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D18F46BC24DA8D3100252F0A /* Project object */;
 }
