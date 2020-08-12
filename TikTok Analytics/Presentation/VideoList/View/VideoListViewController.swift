@@ -90,8 +90,7 @@ extension VideoListViewController: VideoListScreenDelegate, SortByPopupDelegate 
             
             collectionView.fillSuperview(padding: UIEdgeInsets(top: 0, left: 36, bottom: 0, right: 36))
             
-            activityIndicatorView.topAnchor.constraint(equalTo: collectionView.topAnchor, constant: 50).isActive = true
-            activityIndicatorView.anchor(centerX: view.centerXAnchor)
+            activityIndicatorView.anchor(centerY: collectionView.centerYAnchor, centerX: view.centerXAnchor)
         } else if UIDevice.isPad {
             view.addSubviews(topCounterView, topCounterBorder, contentTitleLabel, collectionView, activityIndicatorView)
             topCounterView.anchor(top: view.topAnchor, size: CGSize(width: 345, height: 65))
@@ -105,8 +104,7 @@ extension VideoListViewController: VideoListScreenDelegate, SortByPopupDelegate 
             
             collectionView.anchor(top: contentTitleLabel.bottomAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor, padding: UIEdgeInsets(top: 10, left: 72, bottom: 0, right: 72))
             
-            activityIndicatorView.topAnchor.constraint(equalTo: contentTitleLabel.bottomAnchor, constant: 50).isActive = true
-            activityIndicatorView.anchor(centerX: view.centerXAnchor)
+            activityIndicatorView.anchor(centerY: collectionView.centerYAnchor, centerX: view.centerXAnchor)
         }
         
         view.layoutIfNeeded()

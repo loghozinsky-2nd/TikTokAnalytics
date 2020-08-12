@@ -37,6 +37,10 @@
 		D12DEECF24DDEE8900AD086E /* VideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DEECE24DDEE8900AD086E /* VideoListViewController.swift */; };
 		D12DEED124DDEF5200AD086E /* VideoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DEED024DDEF5200AD086E /* VideoListViewModel.swift */; };
 		D12DEED324DDFBFE00AD086E /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DEED224DDFBFE00AD086E /* Video.swift */; };
+		D13CA32224E31D950027CCF2 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13CA32124E31D950027CCF2 /* OnboardingViewController.swift */; };
+		D13CA32424E3272A0027CCF2 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13CA32324E3272A0027CCF2 /* OnboardingCollectionViewCell.swift */; };
+		D13CA32624E33AEA0027CCF2 /* VerticalGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13CA32524E33AEA0027CCF2 /* VerticalGradientButton.swift */; };
+		D13CA32824E33C700027CCF2 /* BalooTamma-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D13CA32724E33C700027CCF2 /* BalooTamma-Regular.ttf */; };
 		D15422B524DF38190005B2B3 /* ChooseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15422B424DF38190005B2B3 /* ChooseTableViewCell.swift */; };
 		D15422B724DF3E4F0005B2B3 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15422B624DF3E4F0005B2B3 /* String.swift */; };
 		D18F46C824DA8D3100252F0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18F46C724DA8D3100252F0A /* AppDelegate.swift */; };
@@ -82,6 +86,10 @@
 		D12DEECE24DDEE8900AD086E /* VideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListViewController.swift; sourceTree = "<group>"; };
 		D12DEED024DDEF5200AD086E /* VideoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListViewModel.swift; sourceTree = "<group>"; };
 		D12DEED224DDFBFE00AD086E /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		D13CA32124E31D950027CCF2 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		D13CA32324E3272A0027CCF2 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		D13CA32524E33AEA0027CCF2 /* VerticalGradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalGradientButton.swift; sourceTree = "<group>"; };
+		D13CA32724E33C700027CCF2 /* BalooTamma-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooTamma-Regular.ttf"; sourceTree = "<group>"; };
 		D15422B424DF38190005B2B3 /* ChooseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTableViewCell.swift; sourceTree = "<group>"; };
 		D15422B624DF3E4F0005B2B3 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		D18F46C424DA8D3100252F0A /* TikTok Analytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TikTok Analytics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +173,7 @@
 		D12590E224DAD62700D5F974 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				D13CA32724E33C700027CCF2 /* BalooTamma-Regular.ttf */,
 				D12590E324DAD63D00D5F974 /* Roboto-Medium.ttf */,
 				D12590F124DB437F00D5F974 /* SFProDisplay-Medium.ttf */,
 			);
@@ -175,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				D12DEECA24DDEAFB00AD086E /* Component */,
+				D13CA31F24E31D720027CCF2 /* Onboarding */,
 				D12590EE24DB190E00D5F974 /* Auth */,
 				D1200E9424DC30E100FEEAF1 /* Personal */,
 				D12DEECB24DDEE1D00AD086E /* VideoList */,
@@ -220,6 +230,7 @@
 				D10991FE24DE732000C0CF34 /* VideoCollectionViewCell.swift */,
 				D12DEEC424DD9BD100AD086E /* ContentImageVew.swift */,
 				D1200E9B24DC34E000FEEAF1 /* GradientButton.swift */,
+				D13CA32524E33AEA0027CCF2 /* VerticalGradientButton.swift */,
 				D12DEEC624DDBB4D00AD086E /* ImageView.swift */,
 				D12DEEBC24DD5D7800AD086E /* UserImageView.swift */,
 				D12DEEBE24DD642F00AD086E /* Label.swift */,
@@ -252,6 +263,23 @@
 				D12DEED024DDEF5200AD086E /* VideoListViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D13CA31F24E31D720027CCF2 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				D13CA32024E31D830027CCF2 /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D13CA32024E31D830027CCF2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D13CA32124E31D950027CCF2 /* OnboardingViewController.swift */,
+				D13CA32324E3272A0027CCF2 /* OnboardingCollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D18F46BB24DA8D3100252F0A = {
@@ -380,6 +408,7 @@
 			files = (
 				D18F46D424DA8D3100252F0A /* LaunchScreen.storyboard in Resources */,
 				D18F46D124DA8D3100252F0A /* Assets.xcassets in Resources */,
+				D13CA32824E33C700027CCF2 /* BalooTamma-Regular.ttf in Resources */,
 				D12590E524DAD63D00D5F974 /* Roboto-Medium.ttf in Resources */,
 				D12590F224DB437F00D5F974 /* SFProDisplay-Medium.ttf in Resources */,
 			);
@@ -399,6 +428,7 @@
 				D12590EC24DB0C6E00D5F974 /* Roboto-Medium.ttf in Sources */,
 				D1200E9924DC342600FEEAF1 /* UsernameField.swift in Sources */,
 				D10991FD24DE718C00C0CF34 /* CollectionView.swift in Sources */,
+				D13CA32224E31D950027CCF2 /* OnboardingViewController.swift in Sources */,
 				D101AE7824DB45A0008BA2C0 /* SFProDisplay-Medium.ttf in Sources */,
 				D10991FF24DE732000C0CF34 /* VideoCollectionViewCell.swift in Sources */,
 				D12DEEBF24DD642F00AD086E /* Label.swift in Sources */,
@@ -407,6 +437,7 @@
 				D12DEECF24DDEE8900AD086E /* VideoListViewController.swift in Sources */,
 				D12DEED124DDEF5200AD086E /* VideoListViewModel.swift in Sources */,
 				D1200EA524DC952C00FEEAF1 /* User.swift in Sources */,
+				D13CA32424E3272A0027CCF2 /* OnboardingCollectionViewCell.swift in Sources */,
 				D109920124DE93EB00C0CF34 /* CountValueFormatter.swift in Sources */,
 				D12590E824DB00C400D5F974 /* UIFont+Extension.swift in Sources */,
 				D12DEEC924DDC17100AD086E /* SquaredFooterView.swift in Sources */,
@@ -415,6 +446,7 @@
 				D15422B524DF38190005B2B3 /* ChooseTableViewCell.swift in Sources */,
 				D1200EA124DC8C3100FEEAF1 /* APIService+Endpoint.swift in Sources */,
 				D18F46E724DA957E00252F0A /* NavigationController.swift in Sources */,
+				D13CA32624E33AEA0027CCF2 /* VerticalGradientButton.swift in Sources */,
 				D1200E9F24DC8C0500FEEAF1 /* APIService.swift in Sources */,
 				D18F46C824DA8D3100252F0A /* AppDelegate.swift in Sources */,
 				D1200EAB24DCB85A00FEEAF1 /* UIDevice+Extension.swift in Sources */,
@@ -565,15 +597,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73VJRTF9X7;
 				INFOPLIST_FILE = "TikTok Analytics/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "TikTok-Analytics";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.loghozinsky.TikTok-Analytics";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -586,15 +619,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73VJRTF9X7;
 				INFOPLIST_FILE = "TikTok Analytics/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "TikTok-Analytics";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.loghozinsky.TikTok-Analytics";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

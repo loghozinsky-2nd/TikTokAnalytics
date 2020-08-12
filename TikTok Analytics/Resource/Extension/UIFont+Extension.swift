@@ -15,4 +15,8 @@ extension UIFont {
     open class func sfprodisplay(ofSize fontSize: CGFloat) -> UIFont {
         return UIFont(name: "SFProDisplay-Medium", size: fontSize)!
     }
+    
+    open class func balootamma(ofSize fontSize: CGFloat) -> UIFont {
+        return UIFont(name: "BalooTamma-Regular", size: fontSize)!
+    }
 }

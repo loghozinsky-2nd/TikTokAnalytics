@@ -10,3 +10,5 @@ import UIKit
 class DetailsCollectionView: UICollectionView {}
 
 class VideoListCollectionView: UICollectionView {}
+
+class OnboardingCollectionView: UICollectionView {}
