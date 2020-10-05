@@ -8,9 +8,9 @@
 import Foundation
 
 enum API: String {
-    case dev = "http://18.158.239.46/api/"
+    case dev = ""
 }
 
 struct Constant {
-    static let key = "vBQgSJoAWjF5kterbyL6Xxf0iUsw1nh9"
+    static let key = ""
 }
